@@ -1,0 +1,12 @@
+namespace Sample
+{
+	public class SampleScript
+	{
+		public bool EntryPoint()
+		{
+			System.Random random = new System.Random();
+			int number = random.Next(0, 2);
+			return number < 1 ? true : false;
+		}
+	}
+}
