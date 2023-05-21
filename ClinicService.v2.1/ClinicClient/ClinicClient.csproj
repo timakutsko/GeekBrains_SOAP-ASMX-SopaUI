@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.22.3" />
+    <PackageReference Include="Grpc.Tools" Version="2.54.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Proto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\ClinicService\Proto\Clinic.proto" GrpcServices="Client">
+      <Link>Proto\Clinic.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

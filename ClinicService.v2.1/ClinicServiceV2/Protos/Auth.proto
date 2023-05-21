@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "AuthenticateServiceNamespace";
+
+import "google/protobuf/wrappers.proto";
+
+service AuthenticateService{
+	rpc Login (AuthenticationRequest) returns (AuthenticationResponse);
+	rpc GetSession (GetSessionRequest) returns (GetSessionResponse);
+}
+
+message AuthenticationRequest{
+	string userName = 1;
+	string password = 2;
+}
+
+message AuthenticationResponse{
+	int32 errCode = 1;
+	string errMessage = 2;
+	SessionContext sessionContext = 3;
+}
+
+message GetSessionRequest{
+}
+
+message GetSessionResponse{
+	SessionContext sessionContext = 1;
+}
+
+message SessionContext{
+	int32 sessionId = 1;
+	string sessionToken = 2;
+	AccountDto sessionAccount = 3;
+}
+
+message AccountDto{
+	int32 accountId = 1;
+	string eMail = 2;
+	bool locked = 3;
+	string surname = 4;
+	string firstName = 5;
+}
