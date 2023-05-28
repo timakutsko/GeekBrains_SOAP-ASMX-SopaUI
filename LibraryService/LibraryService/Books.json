@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1234e",
+    "title": "SOAP",
+    "category": "Since",
+    "authors": [
+      {
+        "name": "Tsimafei Kutsko",
+        "lang": "by"
+      }
+    ],
+    "publicationDate": "2023",
+    "lang": "en",
+    "pages": 191,
+    "ageLimit": 14
+  },
+  {
+    "id": "1233e",
+    "title": "Wild cats",
+    "category": "Animals",
+    "authors": [
+      {
+        "name": "Kitty Cat",
+        "lang": "en"
+      }
+    ],
+    "publicationDate": "2023",
+    "lang": "en",
+    "pages": 12,
+    "ageLimit": 0
+  },
+  {
+    "id": "1236f",
+    "title": "Other stuff",
+    "category": "Since",
+    "authors": [
+      {
+        "name": "Wild John",
+        "lang": "en"
+      },
+      {
+        "name": "Home John",
+        "lang": "fr"
+      }
+    ],
+    "publicationDate": "1931",
+    "lang": "en",
+    "pages": 1223,
+    "ageLimit": 60
+  }
+]
